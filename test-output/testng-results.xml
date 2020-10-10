@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Automation Suite" duration-ms="57" started-at="2020-10-03T12:08:22Z" finished-at="2020-10-03T12:08:22Z">
+    <groups>
+      <group name="Sanity">
+        <method signature="Cart.AddToCart()[pri:0, instance:FlipkartPayment.Cart@5f375618]" name="AddToCart" class="FlipkartPayment.Cart"/>
+        <method signature="Logout.LogoutSuccess()[pri:0, instance:FlipkartLogout.Logout@215be6bb]" name="LogoutSuccess" class="FlipkartLogout.Logout"/>
+        <method signature="Order.OrderNumber()[pri:0, instance:FlipkartOrder.Order@32d992b2]" name="OrderNumber" class="FlipkartOrder.Order"/>
+        <method signature="Order.OrderDeliveryDate()[pri:0, instance:FlipkartOrder.Order@32d992b2]" name="OrderDeliveryDate" class="FlipkartOrder.Order"/>
+        <method signature="Payment.ValidCardDetails()[pri:0, instance:FlipkartPayment.Payment@1810399e]" name="ValidCardDetails" class="FlipkartPayment.Payment"/>
+        <method signature="Search.ProductSearch()[pri:0, instance:FlipkartSearch.Search@6d78f375]" name="ProductSearch" class="FlipkartSearch.Search"/>
+        <method signature="Search.ProductClicked()[pri:0, instance:FlipkartSearch.Search@6d78f375]" name="ProductClicked" class="FlipkartSearch.Search"/>
+        <method signature="Login.LoginSuccess()[pri:0, instance:FlipkartLogin.Login@6d8a00e3]" name="LoginSuccess" class="FlipkartLogin.Login"/>
+      </group> <!-- Sanity -->
+    </groups>
+    <test name="Sanity Test" duration-ms="57" started-at="2020-10-03T12:08:22Z" finished-at="2020-10-03T12:08:22Z">
+      <class name="FlipkartLogout.Logout">
+        <test-method status="PASS" signature="LogoutSuccess()[pri:0, instance:FlipkartLogout.Logout@215be6bb]" name="LogoutSuccess" duration-ms="1" started-at="2020-10-03T17:38:22Z" finished-at="2020-10-03T17:38:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoutSuccess -->
+      </class> <!-- FlipkartLogout.Logout -->
+      <class name="FlipkartPayment.Cart">
+        <test-method status="PASS" signature="AddToCart()[pri:0, instance:FlipkartPayment.Cart@5f375618]" name="AddToCart" duration-ms="2" started-at="2020-10-03T17:38:22Z" finished-at="2020-10-03T17:38:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddToCart -->
+      </class> <!-- FlipkartPayment.Cart -->
+      <class name="FlipkartLogin.Login">
+        <test-method status="PASS" signature="LoginSuccess()[pri:0, instance:FlipkartLogin.Login@6d8a00e3]" name="LoginSuccess" duration-ms="14" started-at="2020-10-03T17:38:22Z" finished-at="2020-10-03T17:38:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginSuccess -->
+      </class> <!-- FlipkartLogin.Login -->
+      <class name="FlipkartOrder.Order">
+        <test-method status="PASS" signature="OrderNumber()[pri:0, instance:FlipkartOrder.Order@32d992b2]" name="OrderNumber" duration-ms="1" started-at="2020-10-03T17:38:22Z" finished-at="2020-10-03T17:38:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderNumber -->
+        <test-method status="PASS" signature="OrderDeliveryDate()[pri:0, instance:FlipkartOrder.Order@32d992b2]" name="OrderDeliveryDate" duration-ms="1" started-at="2020-10-03T17:38:22Z" depends-on-methods="FlipkartOrder.Order.OrderNumber" finished-at="2020-10-03T17:38:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderDeliveryDate -->
+      </class> <!-- FlipkartOrder.Order -->
+      <class name="FlipkartPayment.Payment">
+        <test-method status="PASS" signature="ValidCardDetails()[pri:0, instance:FlipkartPayment.Payment@1810399e]" name="ValidCardDetails" duration-ms="1" started-at="2020-10-03T17:38:22Z" finished-at="2020-10-03T17:38:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidCardDetails -->
+      </class> <!-- FlipkartPayment.Payment -->
+      <class name="FlipkartSearch.Search">
+        <test-method status="PASS" signature="ProductSearch()[pri:0, instance:FlipkartSearch.Search@6d78f375]" name="ProductSearch" duration-ms="2" started-at="2020-10-03T17:38:22Z" finished-at="2020-10-03T17:38:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductSearch -->
+        <test-method status="PASS" signature="ProductClicked()[pri:0, instance:FlipkartSearch.Search@6d78f375]" name="ProductClicked" duration-ms="1" started-at="2020-10-03T17:38:22Z" depends-on-methods="FlipkartSearch.Search.ProductSearch" finished-at="2020-10-03T17:38:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductClicked -->
+      </class> <!-- FlipkartSearch.Search -->
+    </test> <!-- Sanity Test -->
+  </suite> <!-- Automation Suite -->
+</testng-results>

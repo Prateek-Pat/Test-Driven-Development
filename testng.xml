@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Suite">
+  <test name="Sanity Test">
+    <classes>
+    <class name="FlipkartLogin.Login"> 
+     <methods>
+      		<exclude name ="Loginfailure"/>
+     </methods>
+    </class>
+     <class name ="FlipkartLogin.UserCredentials"/>
+     
+     <class name ="FlipkartSearch.Search">
+      	<methods>
+      		<exclude name ="ProductClicked"/>
+      	</methods>
+      </class>
+ 	<class name ="FlipkartOrder.Order">
+      	<methods>
+      		<include name ="OrderNumber"/>	
+      	</methods>
+      </class>
+     <class name ="FlipkartPayment.Payment">
+      	<methods>
+      		<include name ="ValidCardDetails"/>
+      	</methods>
+      	</class>
+     <class name ="FlipkartLogout.Logout">
+      	<methods>
+      		<include name ="LogoutSuccess"/>
+     	</methods>
+     </class>
+    </classes>
+  </test> 
+</suite>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Suite">
+	<test name="Sanity Test">
+
+		<groups>
+			<run>
+				<include name="Sanity"/>
+			</run>
+		</groups>
+
+		<classes>
+			<class name="FlipkartLogin.Login"/>
+			<class name="FlipkartSearch.Search"/>
+			<class name="FlipkartPayment.Cart"/>
+			<class name="FlipkartPayment.Payment"/>
+			<class name="FlipkartOrder.Order"/>
+			<class name="FlipkartLogout.Logout"/>
+		</classes>
+	</test>
+</suite>
